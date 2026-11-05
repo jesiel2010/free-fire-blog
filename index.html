@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101014">
+  <meta name="description" content="Blog Free Fire: dicas, personagens, armas, atualizações e estratégias para subir de patente.">
+  <title>FF Zone — Blog Free Fire</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap');
+    :root{--bg:#101014;--panel:#19191f;--muted:#aaaab4;--text:#f7f7fa;--orange:#ff6b18;--yellow:#ffc247}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}.topbar{background:#0a0a0d;border-bottom:1px solid #292930;position:sticky;top:0;z-index:10}
+    .nav{max-width:1120px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .logo{font:900 29px 'Barlow Condensed',sans-serif;letter-spacing:1px}.logo span{color:var(--orange)}
+    nav{display:flex;gap:24px;font-size:13px;font-weight:700;color:#d1d1d8}nav a:hover{color:var(--yellow)}
+    .hero{min-height:420px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(12,12,16,.98) 0%,rgba(12,12,16,.82) 48%,rgba(12,12,16,.2) 100%),url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1800&q=85') center/cover}
+    .hero-inner{max-width:1120px;width:100%;margin:auto;padding:70px 22px}.eyebrow{color:var(--yellow);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+    h1,h2,h3{font-family:'Barlow Condensed',Impact,sans-serif;text-transform:uppercase;margin:0;line-height:.98}
+    h1{font-size:clamp(52px,8vw,88px);max-width:680px;margin:15px 0}.hero p{color:#d0d0d7;max-width:530px;line-height:1.7;font-size:15px}
+    .cta{display:inline-block;background:var(--orange);padding:14px 22px;border-radius:5px;font-size:12px;font-weight:900;letter-spacing:1px;margin-top:14px;transition:.2s}.cta:hover{background:#ff873f;transform:translateY(-2px)}
+    main{max-width:1120px;margin:auto;padding:58px 22px}.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:24px;gap:20px}.section-head h2{font-size:38px}.section-head p{color:var(--muted);font-size:13px;margin:0}
+    .featured{display:grid;grid-template-columns:1.2fr 1fr;background:var(--panel);border:1px solid #292930;border-radius:9px;overflow:hidden;margin-bottom:54px}
+    .feature-img{min-height:270px;background:linear-gradient(135deg,#48220f,#17171e 70%);display:grid;place-items:center;position:relative;overflow:hidden}
+    .feature-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;opacity:.8}.feature-copy{padding:34px;align-self:center}.tag{font-size:10px;font-weight:900;letter-spacing:1.5px;color:var(--orange);text-transform:uppercase}
+    .feature-copy h3{font-size:35px;margin:12px 0}.feature-copy p,.post p{font-size:13px;color:var(--muted);line-height:1.75}
+    .posts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.post{background:var(--panel);border:1px solid #292930;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;transition:.2s}.post:hover{transform:translateY(-4px);border-color:#55515a}
+    .post-art{height:155px;display:grid;place-items:center;font-size:54px;background:radial-gradient(circle at 50% 35%,#633116,#25202a 70%)}.post:nth-child(2) .post-art{background:radial-gradient(circle at 50% 35%,#244b55,#20202a 70%)}.post:nth-child(3) .post-art{background:radial-gradient(circle at 50% 35%,#55451d,#24202a 70%)}
+    .post-body{padding:21px;display:flex;flex-direction:column;flex:1}.post h3{font-size:25px;margin:10px 0}.post p{margin:0 0 18px}
+    .like-btn{margin-top:auto;align-self:flex-start;border:1px solid #48434a;background:#222127;color:#f4f4f5;border-radius:5px;padding:10px 14px;font-weight:800;font-size:12px;cursor:pointer;transition:.2s}
+    .like-btn:hover{border-color:var(--orange)}.like-btn.liked{background:#3a1d1d;border-color:#ff5555;color:#ff7777}.heart{font-size:15px;margin-right:5px}
+    .tips{margin-top:58px;padding:32px;border:1px solid #343039;border-radius:9px;background:linear-gradient(120deg,#211a18,#19191f)}.tips h2{font-size:34px;margin-bottom:12px}.tips p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}
+    footer{border-top:1px solid #292930;text-align:center;padding:28px 20px;color:#85858f;font-size:12px}footer strong{color:var(--orange)}
+    @media(max-width:760px){nav{gap:12px;font-size:11px}.featured{grid-template-columns:1fr}.feature-img{min-height:190px}.posts{grid-template-columns:1fr}.hero{min-height:390px}.hero-inner{padding-top:55px}.section-head{align-items:start;flex-direction:column}}
+    @media(max-width:420px){.nav{padding:13px 16px}.logo{font-size:24px}nav{gap:9px}nav a{font-size:10px}main{padding:42px 16px}.hero-inner{padding-left:16px;padding-right:16px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="nav">
+      <a class="logo" href="#"><span>FF</span> ZONE</a>
+      <nav aria-label="Navegação principal"><a href="#inicio">INÍCIO</a><a href="#destaque">DESTAQUE</a><a href="#dicas">DICAS</a></nav>
+    </div>
+  </header>
+  <section class="hero" id="inicio">
+    <div class="hero-inner">
+      <div class="eyebrow">O seu ponto de encontro no campo de batalha</div>
+      <h1>ENTRE NO JOGO.<br><span style="color:var(--orange)">VIRE LENDA.</span></h1>
+      <p>Notícias, estratégias e dicas de Free Fire para você evoluir, jogar melhor e buscar o Booyah em cada partida.</p>
+      <a class="cta" href="#dicas">EXPLORAR CONTEÚDO</a>
+    </div>
+  </section>
+  <main>
+    <section id="destaque">
+      <div class="section-head"><div><div class="eyebrow">Em destaque</div><h2>FIQUE POR DENTRO</h2></div><p>Conteúdo feito para quem joga de verdade.</p></div>
+      <article class="featured">
+        <div class="feature-img"><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1000&q=85" alt="Setup gamer com computador e iluminação"></div>
+        <div class="feature-copy"><div class="tag">Estratégia • Guia</div><h3>COMO CHEGAR AO BOOYAH</h3><p>Escolha bem o local de queda, colete equipamentos com rapidez e fique atento à zona segura. Jogar com estratégia pode fazer toda a diferença no final da partida.</p></div>
+      </article>
+    </section>
+    <section id="dicas">
+      <div class="section-head"><div><div class="eyebrow">Prepare-se para a próxima partida</div><h2>DICAS E GUIAS</h2></div><p>Curta seus artigos favoritos!</p></div>
+      <div class="posts">
+        <article class="post">
+          <div class="post-art" aria-hidden="true">🎯</div>
+          <div class="post-body"><div class="tag">Dica de gameplay</div><h3>DOMINE A MIRA</h3><p>Treine a sensibilidade no campo de treinamento, ajuste os controles ao seu estilo e pratique puxadas de capa com calma e consistência.</p><button class="like-btn" data-like="mira" aria-pressed="false"><span class="heart">♡</span> Curtir <span class="count">0</span></button></div>
+        </article>
+        <article class="post">
+          <div class="post-art" aria-hidden="true">🛡️</div>
+          <div class="post-body"><div class="tag">Sobrevivência</div><h3>ESCOLHA SEU POUSO</h3><p>Conheça o mapa, observe a rota do avião e escolha um ponto que combine com seu estilo: confronto imediato ou evolução segura.</p><button class="like-btn" data-like="pouso" aria-pressed="false"><span class="heart">♡</span> Curtir <span class="count">0</span></button></div>
+        </article>
+        <article class="post">
+          <div class="post-art" aria-hidden="true">⚡</div>
+          <div class="post-body"><div class="tag">Trabalho em equipe</div><h3>JOGUE EM SQUAD</h3><p>Combine funções com seu time, compartilhe recursos e use a comunicação para evitar confrontos desnecessários.</p><button class="like-btn" data-like="squad" aria-pressed="false"><span class="heart">♡</span> Curtir <span class="count">0</span></button></div>
+        </article>
+      </div>
+    </section>
+    <section class="tips">
+      <div class="eyebrow">Dica rápida</div><h2>SEU PRÓXIMO BOOYAH COMEÇA AGORA</h2><p>Não existe uma única estratégia vencedora. Teste configurações, aprenda com cada partida e encontre o jeito de jogar que funciona melhor para você. Boa partida!</p>
+    </section>
+  </main>
+  <footer>© 2026 <strong>FF ZONE</strong> — Blog feito por fãs de Free Fire. Este é um projeto independente e não oficial da Garena.</footer>
+  <script>
+    // As curtidas ficam salvas neste navegador usando localStorage.
+    document.querySelectorAll('.like-btn').forEach((button) => {
+      const id = button.dataset.like;
+      const key = 'ffzone-like-' + id;
+      const countKey = 'ffzone-count-' + id;
+      let liked = localStorage.getItem(key) === 'true';
+      let count = Number(localStorage.getItem(countKey) || 0);
+      const render = () => {
+        button.classList.toggle('liked', liked);
+        button.setAttribute('aria-pressed', String(liked));
+        button.querySelector('.heart').textContent = liked ? '♥' : '♡';
+        button.querySelector('.count').textContent = count;
+      };
+      button.addEventListener('click', () => {
+        liked = !liked;
+        count = Math.max(0, count + (liked ? 1 : -1));
+        localStorage.setItem(key, String(liked));
+        localStorage.setItem(countKey, String(count));
+        render();
+      });
+      render();
+    });
+  </script>
+</body>
+</html>
